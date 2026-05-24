@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktive Mini-Webseite</title>
+    <style>
+        /* ===== CSS: Design ===== */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HTML: Struktur ===== -->
+    <h1>Willkommen auf meiner Mini-Webseite</h1>
+    <p>Klicke auf den Button, um eine Nachricht zu sehen:</p>
+    <button id="myButton">Klick mich!</button>
+
+    <div id="output"></div>
+
+    <!-- ===== JavaScript: Interaktivität ===== -->
+    <script>
+        // Element-Referenzen holen
+        const button = document.getElementById('myButton');
+        const output = document.getElementById('output');
+
+        // Klick-Event hinzufügen
+        button.addEventListener('click', function() {
+            const now = new Date();
+            output.textContent = `Hallo! Es ist jetzt ${now.toLocaleTimeString()}.`;
+        });
+    </script>
+
+</body>
+</html>
