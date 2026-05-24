@@ -1,61 +1,53 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interaktive Mini-Webseite</title>
-    <style>
-        /* ===== CSS: Design ===== */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            color: #333;
-        }
-        button {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        #output {
-            margin-top: 20px;
-            font-size: 18px;
-            color: #444;
-        }
-    </style>
+    <title>Realm Fighters</title>
 </head>
+
 <body>
 
-    <!-- ===== HTML: Struktur ===== -->
-    <h1>Willkommen auf meiner Mini-Webseite</h1>
-    <p>Klicke auf den Button, um eine Nachricht zu sehen:</p>
-    <button id="myButton">Klick mich!</button>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#download">Download</a></li>
+            <li><a href="#klassen">Klassen</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
 
-    <div id="output"></div>
+    <!-- Abschnitt Start -->
+    <section id="start">
+        <h1>Realm Fighters</h1>
+        <p>Willkommen auf meiner Website.</p>
+    </section>
 
-    <!-- ===== JavaScript: Interaktivität ===== -->
-    <script>
-        // Element-Referenzen holen
-        const button = document.getElementById('myButton');
-        const output = document.getElementById('output');
+    <!-- Abschnitt Download -->
+    <section id="download">
+        <h2>Download</h2>
 
-        // Klick-Event hinzufügen
-        button.addEventListener('click', function() {
-            const now = new Date();
-            output.textContent = `Hallo! Es ist jetzt ${now.toLocaleTimeString()}.`;
-        });
-    </script>
+        <a href="../downloads/realm-fighters.zip" download>
+            <button>Spiel herunterladen</button>
+        </a>
+    </section>
+
+    <!-- Abschnitt Klassen -->
+    <section id="klassen">
+        <h2>Klassen</h2>
+
+        <p>Magier</p>
+        <p>Tank</p>
+        <p>Assassine</p>
+    </section>
+
+    <!-- Abschnitt Kontakt -->
+    <section id="kontakt">
+        <h2>Kontakt</h2>
+
+        <p>Discord: hallo0493</p>
+    </section>
 
 </body>
 </html>
