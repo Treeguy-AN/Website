@@ -6,10 +6,8 @@ game::game() :
 {
     window.setFramerateLimit(60);
 
-    if (!font.loadFromFile("C:/Windows/Fonts/arial.ttf"))
-{
-    return;
-}
+    font.loadFromFile("assets/fonts/arial.ttf");
+
 
     text.setFont(font);
     text.setFillColor(sf::Color::White);
