@@ -1,0 +1,58 @@
+body {
+    background-color: #111;
+    color: white;
+
+    font-family: Arial;
+
+    margin: 0;
+}
+
+nav {
+    background-color: #1b1b1b;
+
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin-right: 20px;
+}
+
+nav a:hover {
+    color: red;
+}
+
+header {
+    text-align: center;
+
+    margin-top: 150px;
+}
+
+button {
+    background-color: darkred;
+
+    color: white;
+
+    border: none;
+
+    padding: 15px 30px;
+
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.klasse {
+    background-color: #1d1d1d;
+
+    margin: 30px;
+
+    padding: 20px;
+}
